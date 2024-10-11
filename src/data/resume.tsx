@@ -10,9 +10,9 @@ export const DATA = {
   description:
     "Software Developer and Entrepreneur. I am passionate about building software that is a joy to use.",
   summary1:
-    "I am the founder of Kikstart (Coming soon 👍. A next-generation  suite of business software products with AI-assistance.) ",
+    "I am the founder of Kikstart (Coming soon 👍. Next-generation  business software with AI-assist.) ",
   summary2:
-    "I am also a co-founder of Kodelab, a software development studio primarily focused on building full-stack web and mobile applications. React fanboy.",
+    "I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.",
   avatarUrl: "/me.png",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -148,19 +148,7 @@ export const DATA = {
       end: "1987",
     },
   ],
-  skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
-    "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
-  ],
+  skills: ["React", "Next.js", "Typescript", "C#", ".NET"],
   projects: [
     {
       title: "Chat Collect",
