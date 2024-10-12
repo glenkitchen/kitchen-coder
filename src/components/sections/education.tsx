@@ -1,6 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { ResumeCard } from "@/components/resume-card";
-import { DATA } from "@/data/resume";
+import { siteConfig } from "@/data/config";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -11,7 +11,7 @@ export default function Education() {
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
           <h2 className="text-xl font-bold">Education</h2>
         </BlurFade>
-        {DATA.education.map((education, id) => (
+        {siteConfig.education.map((education, id) => (
           <BlurFade
             key={education.school}
             delay={BLUR_FADE_DELAY * 8 + id * 0.05}

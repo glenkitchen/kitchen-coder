@@ -1,5 +1,5 @@
 import { getBlogPosts, getPost } from "@/data/blog";
-import { DATA } from "@/data/resume";
+import { siteConfig } from "@/data/config";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -25,7 +25,9 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+  let ogImage = image
+    ? `${siteConfig.url}${image}`
+    : `${siteConfig.url}/og?title=${title}`;
 
   return {
     title,
@@ -35,7 +37,7 @@ export async function generateMetadata({
       description,
       type: "article",
       publishedTime,
-      url: `${DATA.url}/blog/${post.slug}`,
+      url: `${siteConfig.url}/blog/${post.slug}`,
       images: [
         {
           url: ogImage,
@@ -78,12 +80,12 @@ export default async function Blog({
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
             image: post.metadata.image
-              ? `${DATA.url}${post.metadata.image}`
-              : `${DATA.url}/og?title=${post.metadata.title}`,
-            url: `${DATA.url}/blog/${post.slug}`,
+              ? `${siteConfig.url}${post.metadata.image}`
+              : `${siteConfig.url}/og?title=${post.metadata.title}`,
+            url: `${siteConfig.url}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: DATA.name,
+              name: siteConfig.name,
             },
           }),
         }}

@@ -1,5 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { DATA } from "@/data/resume";
+import { siteConfig } from "@/data/config";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -12,13 +12,13 @@ export default function About() {
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 4}>
         <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-          {DATA.summary1}
+          {siteConfig.summary1}
         </Markdown>
       </BlurFade>
-      {DATA?.summary2 && (
+      {siteConfig?.summary2 && (
         <BlurFade delay={BLUR_FADE_DELAY * 5}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary2}
+            {siteConfig.summary2}
           </Markdown>
         </BlurFade>
       )}

@@ -1,5 +1,5 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { DATA } from "@/data/resume";
+import { siteConfig } from "@/data/config";
 import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -22,7 +22,7 @@ export default function Contact() {
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Send me a{" "}
               <Link
-                href={DATA.contact.social.X.url}
+                href={siteConfig.contact.social.X.url}
                 className="text-blue-500 hover:underline"
               >
                 dm (Direct Message) on X
@@ -32,7 +32,7 @@ export default function Contact() {
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Or mail me on{" "}
               <Link
-                href={DATA.contact.social.email.url}
+                href={siteConfig.contact.social.email.url}
                 className="text-blue-500 hover:underline"
               >
                 gmail

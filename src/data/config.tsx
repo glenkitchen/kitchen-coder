@@ -1,8 +1,9 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
-export const DATA = {
-  name: "Kitchen Coder",
+export const siteConfig = {
+  name: "The Kitchen Coder",
+  footer: "Software Developer and Entrepreneur",
   initials: "GDK",
   url: "https://kitchen-coder.vercel.app/",
   location: "Ballito, KZN, South Africa",
@@ -10,7 +11,7 @@ export const DATA = {
   description:
     "Software Developer and Entrepreneur. I am passionate about building software that is a joy to use.",
   summary1:
-    "I am the founder of Kikstart (Coming soon 👍. Next-generation  business software with AI-assist.) ",
+    "I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist.) ",
   summary2:
     "I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.",
   avatarUrl: "/me.png",
