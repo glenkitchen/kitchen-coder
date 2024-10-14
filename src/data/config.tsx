@@ -3,18 +3,19 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const siteConfig = {
   name: "The Kitchen Coder",
+  description:
+    "Software Developer and Entrepreneur. I am passionate about building software that is a joy to use.",
+  avatarUrl: "/me.png",
   footer: "Software Developer and Entrepreneur",
   initials: "GDK",
   url: "https://kitchen-coder.vercel.app/",
   location: "Ballito, KZN, South Africa",
   locationLink: "https://www.google.com/maps/place/Ballito",
-  description:
-    "Software Developer and Entrepreneur. I am passionate about building software that is a joy to use.",
-  summary1:
-    "I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist.) ",
-  summary2:
-    "I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.",
-  avatarUrl: "/me.png",
+  about: {
+    title: "About",
+    text: `I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist).  
+    I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.`,
+  },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },

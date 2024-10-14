@@ -8,20 +8,13 @@ export default function About() {
   return (
     <section id="about">
       <BlurFade delay={BLUR_FADE_DELAY * 3}>
-        <h2 className="text-xl font-bold">About</h2>
+        <h2 className="text-xl font-bold">{siteConfig.about.title}</h2>
       </BlurFade>
       <BlurFade delay={BLUR_FADE_DELAY * 4}>
         <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-          {siteConfig.summary1}
+          {siteConfig.about.text}
         </Markdown>
       </BlurFade>
-      {siteConfig?.summary2 && (
-        <BlurFade delay={BLUR_FADE_DELAY * 5}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {siteConfig.summary2}
-          </Markdown>
-        </BlurFade>
-      )}
     </section>
   );
 }
