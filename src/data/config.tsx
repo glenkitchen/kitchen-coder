@@ -13,7 +13,8 @@ export const siteConfig = {
   locationLink: "https://www.google.com/maps/place/Ballito",
   about: {
     title: "About",
-    text: `I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist).  
+    text: `Christian, husband, father.  
+    I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist).  
     I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.`,
   },
   navbar: [
