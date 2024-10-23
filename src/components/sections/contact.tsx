@@ -20,14 +20,13 @@ export default function Contact() {
               Want to chat?
             </p>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Send me a{" "}
+              Send me a message on{" "}
               <Link
                 href={siteConfig.contact.social.X.url}
                 className="text-blue-500 hover:underline"
               >
-                dm (Direct Message) on X
-              </Link>{" "}
-              and I will respond when I can.
+                X
+              </Link>
             </p>
             <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Or mail me on{" "}
@@ -35,7 +34,7 @@ export default function Contact() {
                 href={siteConfig.contact.social.email.url}
                 className="text-blue-500 hover:underline"
               >
-                gmail
+                Gmail
               </Link>
             </p>
           </div>
