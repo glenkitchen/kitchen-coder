@@ -49,6 +49,7 @@ const BlurFadeText = ({
                 delay: delay + i * characterDelay,
                 ease: "easeOut",
               }}
+              // @ts-ignore
               className={cn("inline-block", className)}
               style={{ width: char.trim() === "" ? "0.2em" : "auto" }}
             >
@@ -73,6 +74,7 @@ const BlurFadeText = ({
             delay,
             ease: "easeOut",
           }}
+          // @ts-ignore
           className={cn("inline-block", className)}
         >
           {text}

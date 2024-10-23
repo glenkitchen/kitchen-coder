@@ -98,6 +98,7 @@ export const ResumeCard = ({
                 duration: 0.7,
                 ease: [0.16, 1, 0.3, 1],
               }}
+              // @ts-ignore
               className="mt-2 text-xs sm:text-sm"
             >
               {description}

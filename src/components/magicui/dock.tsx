@@ -48,9 +48,11 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     return (
       <motion.div
         ref={ref}
+        // @ts-ignore
         onMouseMove={(e) => mousex.set(e.pageX)}
         onMouseLeave={() => mousex.set(Infinity)}
         {...props}
+        // @ts-ignore
         className={cn(dockVariants({ className }))}
       >
         {renderChildren()}
@@ -103,6 +105,7 @@ const DockIcon = ({
     <motion.div
       ref={ref}
       style={{ width }}
+      // @ts-ignore
       className={cn(
         "flex aspect-square cursor-pointer items-center justify-center rounded-full",
         className
