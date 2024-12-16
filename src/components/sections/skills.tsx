@@ -9,7 +9,7 @@ export default function Skills() {
     <section id="skills">
       <div className="flex min-h-0 flex-col gap-y-3">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-          <h2 className="text-xl font-bold">Skills</h2>
+          <h2 className="text-xl font-bold">Current Skills</h2>
         </BlurFade>
         <div className="flex flex-wrap gap-1">
           {siteConfig.skills.map((skill, id) => (

@@ -4,22 +4,27 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const siteConfig = {
   name: "The Kitchen Coder",
   description:
-    "Software Developer and Entrepreneur. I am passionate about building software that is a joy to use.",
+    "Hi. I am Glen Kitchen, a Software Developer. I specialise in enterprise business software. Christian, husband, father.",
   avatarUrl: "/me.png",
-  footer: "Software Developer and Entrepreneur",
+  footer: "Software Developer.",
   initials: "GDK",
   url: "https://kitchen-coder.vercel.app/",
   location: "Ballito, KZN, South Africa",
   locationLink: "https://www.google.com/maps/place/Ballito",
   about: {
     title: "About",
-    text: `Christian, husband, father.  
-    I am the founder of Kikstart (Coming soon 👍. Next gen business software with AI-assist).  
-    I am also a co-founder of Kodelab, a software development studio for full-stack web and mobile applications.`,
+    text: `I am a software developer with a particular focus on enterprise business software.
+
+I have a combination of specialized business process expertise and deep technical skills; and I have played a leading role in the development of accounting, manufacturing and distribution solutions.
+
+As a coder, my emphasis is platform development, enabling other developers to deliver feature, at speed.  
+Lately, this has also entailed the effective use of AI-assisted coding.
+
+As an architect, I architect for long-term longevity and commercial trade-offs.`,
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    /* { href: "/blog", icon: NotebookIcon, label: "Blog" }, */
   ],
   contact: {
     email: "hello@example.com",
@@ -61,76 +66,64 @@ export const siteConfig = {
   },
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "Insight Consulting/Kodelab",
+      href: "https://insightconsulting.co.za/",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
-      description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+      location: "Durban, KZN, South Africa",
+      title: "Solution Architect",
+      logoUrl: "/insight.jpg",
+      start: "Nov 2019 ",
+      end: "Present",
+      description: "a",
     },
     {
-      company: "Shopify",
+      company: "Derivco ",
+      href: "https://derivco.co.za/",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+      location: "Durban, KZN, South Africa",
+      title: "Senior Developer",
+      logoUrl: "/derivco.jpg",
+      start: "May 2015",
+      end: "Oct 2019",
+      description: "",
     },
     {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
+      company: "AdaptIT",
+      href: "https://www.adaptit.com/",
       badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
+      location: "Durban, KZN, South Africa",
+      title: "Development Team Lead",
+      logoUrl: "/adaptit.jpg",
+      start: "Oct 2006",
+      end: "Apr 2015",
+      description: "",
     },
     {
-      company: "Splunk",
-      href: "https://splunk.com",
+      company: "Van Dyck Carpets",
+      href: "https://www.vandyck.co.za/",
       badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
+      location: "Durban, KZN, South Africa",
+      title: "Accountant/Developer",
+      logoUrl: "/vandyck.jpeg",
+      start: "Apr 1999",
+      end: "Sep 2006",
+      description: "",
     },
     {
-      company: "Lime",
-      href: "https://li.me/",
+      company: "Windmill Restaurant",
+      href: "",
       badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
+      location: "Durban, KZN, South Africa",
+      title: "Restaurant Manager",
+      logoUrl: "",
+      start: "Jun 1992",
+      end: "Mar 1999",
+      description: `This was a hybrid role with accounting and IT duties.  
+
+On the accounting side I was initially the cost accountant and thereafter the management accountant responsible for overseeing the accounts department. 
+
+I was also involved in various IT projects which were my introduction to the world of software development: 
+Manage roll out of Syspro ERP, oversee development of in-house shop floor applications, develop in-house sales reporting applications.`,
     },
   ],
   education: [
@@ -151,7 +144,18 @@ export const siteConfig = {
       end: "1987",
     },
   ],
-  skills: ["React", "Next.js", "Typescript", "C#", ".NET"],
+  skills: [
+    "Typescript",
+    "React",
+    "Next.js",
+    "AI SDK",
+    "Cursor",
+    "v0",
+    "Azure",
+    "Vercel",
+    "C#",
+    ".NET",
+  ],
   projects: [
     {
       title: "Chat Collect",
