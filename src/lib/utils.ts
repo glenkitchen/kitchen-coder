@@ -35,3 +35,32 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export function calculateDuration(
+  startDate: string,
+  endDate: string = "Present"
+): string {
+  const start = new Date(startDate);
+  const end = endDate === "Present" ? new Date() : new Date(endDate);
+
+  const yearDiff = end.getFullYear() - start.getFullYear();
+  const monthDiff = end.getMonth() - start.getMonth();
+
+  let years = yearDiff;
+  let months = monthDiff;
+
+  if (monthDiff < 0) {
+    years--;
+    months += 12;
+  }
+
+  const yearString = years > 0 ? `${years} year${years > 1 ? "s" : ""}` : "";
+  const monthString =
+    months > 0 ? `${months} month${months > 1 ? "s" : ""}` : "";
+
+  if (yearString && monthString) {
+    return `${yearString}, ${monthString}`;
+  } else {
+    return yearString || monthString;
+  }
+}

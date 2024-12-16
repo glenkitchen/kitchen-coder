@@ -1,5 +1,10 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import {
+  FileIcon,
+  GitPullRequestDraftIcon,
+  HomeIcon,
+  NotebookIcon,
+} from "lucide-react";
 
 export const siteConfig = {
   name: "The Kitchen Coder",
@@ -15,7 +20,7 @@ export const siteConfig = {
     title: "About",
     text: `I am a software developer with a particular focus on enterprise business software.
 
-I have a combination of specialized business process expertise and deep technical skills; and I have played a leading role in the development of accounting, manufacturing and distribution solutions.
+I have a combination of specialized business process expertise and deep technical skills; and I have played a leading role in the development of accounting, manufacturing, distribution and retail solutions .
 
 As a coder, my emphasis is platform development, enabling other developers to deliver feature, at speed.  
 Lately, this has also entailed the effective use of AI-assisted coding.
@@ -24,7 +29,8 @@ As an architect, I architect for long-term longevity and commercial trade-offs.`
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    /* { href: "/blog", icon: NotebookIcon, label: "Blog" }, */
+    { href: "/cv", icon: NotebookIcon, label: "CV" },
+    { href: "/cv-pdf", icon: FileIcon, label: "CV - PDF" },
   ],
   contact: {
     email: "hello@example.com",
@@ -74,7 +80,7 @@ As an architect, I architect for long-term longevity and commercial trade-offs.`
       logoUrl: "/insight.jpg",
       start: "Nov 2019 ",
       end: "Present",
-      description: "a",
+      description: "",
     },
     {
       company: "Derivco ",
@@ -118,12 +124,7 @@ As an architect, I architect for long-term longevity and commercial trade-offs.`
       logoUrl: "",
       start: "Jun 1992",
       end: "Mar 1999",
-      description: `This was a hybrid role with accounting and IT duties.  
-
-On the accounting side I was initially the cost accountant and thereafter the management accountant responsible for overseeing the accounts department. 
-
-I was also involved in various IT projects which were my introduction to the world of software development: 
-Manage roll out of Syspro ERP, oversee development of in-house shop floor applications, develop in-house sales reporting applications.`,
+      description: "",
     },
   ],
   education: [
