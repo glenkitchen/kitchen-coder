@@ -9,7 +9,7 @@ import {
 export const siteConfig = {
   name: "The Kitchen Coder",
   description:
-    "Hi. I am Glen Kitchen, a Software Developer. I specialise in enterprise business software. Christian, husband, father.",
+    "Hi. I am Glen Kitchen, a Software Developer and Entrepreneur. I specialise in enterprise business software. Christian, husband, father.",
   avatarUrl: "/me.png",
   footer: "Software Developer.",
   initials: "GDK",
@@ -18,14 +18,15 @@ export const siteConfig = {
   locationLink: "https://www.google.com/maps/place/Ballito",
   about: {
     title: "About",
-    text: `I am a software developer with a particular focus on enterprise business software.
+    text: `I am a software developer with extensive experience in enterprise business software.  
+I am also the co-founder of a software development agency.
 
-I have a combination of specialized business process expertise and deep technical skills; and I have played a leading role in the development of accounting, manufacturing, distribution and retail solutions .
+I bring a unique combination of specialized business process expertise and deep technical skills. I have played a leading role in developing solutions for accounting, manufacturing, distribution, and retail.
 
-As a coder, my emphasis is platform development, enabling other developers to deliver feature, at speed.  
-Lately, this has also entailed the effective use of AI-assisted coding.
-
-As an architect, I architect for long-term longevity and commercial trade-offs.`,
+I am always seeking ways to empower developers to ship faster: 
+- In the past, this involved creating in-house, low-code solutions. 
+- Today, I focus on leveraging AI-assisted coding tools and techniques to drive exponential improvements in productivity.
+`,
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -72,7 +73,7 @@ As an architect, I architect for long-term longevity and commercial trade-offs.`
   },
   work: [
     {
-      company: "Insight Consulting/Kodelab",
+      company: "Insight Consulting/Kodelab (Co-Founder)",
       href: "https://insightconsulting.co.za/",
       badges: [],
       location: "Durban, KZN, South Africa",
@@ -149,11 +150,11 @@ As an architect, I architect for long-term longevity and commercial trade-offs.`
     "Typescript",
     "React",
     "Next.js",
+    "React Native",
+    "Expo",
     "AI SDK",
-    "Cursor",
-    "v0",
-    "Azure",
     "Vercel",
+    "Azure",
     "C#",
     ".NET",
   ],
