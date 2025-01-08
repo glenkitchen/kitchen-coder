@@ -21,7 +21,9 @@ export const siteConfig = {
     text: `I am a software developer with extensive experience in enterprise business software.  
 I am also the co-founder of a software development agency.
 
-I bring a unique combination of specialized business process expertise and deep technical skills. I have played a leading role in developing solutions for accounting, manufacturing, distribution, and retail.
+I bring a unique combination of specialized business process expertise and deep technical skills in the development of full-stack web applications and mobile applications. 
+
+I have played a leading role in developing solutions for accounting, manufacturing, distribution, and retail.
 
 I am always seeking ways to empower developers to ship faster: 
 - In the past, this involved creating in-house, low-code solutions. 
