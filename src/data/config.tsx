@@ -76,11 +76,11 @@ I am always seeking ways to empower developers to ship faster:
   work: [
     {
       company: "Kikstart",
-      href: "https://insightconsulting.co.za/",
+      href: "",
       badges: ["Co-Founder"],
-      logoUrl: "",
       location: "Durban, KZN, South Africa",
       title: "Co-founder",
+      logoUrl: "a",
       start: "Feb 2025",
       end: "Present",
       description: "",
@@ -91,6 +91,7 @@ I am always seeking ways to empower developers to ship faster:
       badges: ["Co-Founder"],
       location: "Durban, KZN, South Africa",
       title: "Co-founder, Solution Architect",
+      logoUrl: "/kodelab.png",
       start: "Mar 2021 ",
       end: "Jan 2025",
       description: "",
