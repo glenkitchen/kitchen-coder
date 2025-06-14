@@ -78,6 +78,7 @@ I am always seeking ways to empower developers to ship faster:
       company: "Kikstart",
       href: "https://insightconsulting.co.za/",
       badges: ["Co-Founder"],
+      logoUrl: "",
       location: "Durban, KZN, South Africa",
       title: "Co-founder",
       start: "Feb 2025",
