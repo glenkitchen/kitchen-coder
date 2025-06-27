@@ -104,7 +104,7 @@ I am always seeking ways to empower developers to ship faster:
       title: "Solution Architect",
       logoUrl: "/insight.jpg",
       start: "Nov 2019 ",
-      end: "Present",
+      end: "Feb 2021",
       description: "",
     },
     {
