@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import AppTabs from "@/components/tabs";
 import Footer from "@/components/sections/footer";
@@ -66,7 +67,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
             <AppTabs />
-            {children}
+            <Suspense>{children}</Suspense>
             <Footer />
             <Navbar />
           </TooltipProvider>

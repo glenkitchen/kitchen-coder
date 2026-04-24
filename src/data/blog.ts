@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import { cacheLife, cacheTag } from "next/cache";
 import path from "path";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeStringify from "rehype-stringify";
@@ -37,6 +38,10 @@ export async function markdownToHTML(markdown: string) {
 }
 
 export async function getPost(slug: string) {
+  "use cache";
+  cacheLife("max");
+  cacheTag("blog-posts", `blog-post-${slug}`);
+
   const filePath = path.join("content", `${slug}.mdx`);
   let source = fs.readFileSync(filePath, "utf-8");
   const { content: rawContent, data: metadata } = matter(source);
@@ -64,5 +69,9 @@ async function getAllPosts(dir: string) {
 }
 
 export async function getBlogPosts() {
+  "use cache";
+  cacheLife("max");
+  cacheTag("blog-posts");
+
   return getAllPosts(path.join(process.cwd(), "content"));
 }

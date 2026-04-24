@@ -1,9 +1,13 @@
 import { Icons } from "@/components/icons";
 import { ChevronRight } from "lucide-react";
+import { cacheLife } from "next/cache";
 import Link from "next/link";
 import { siteConfig } from "@/data/config";
 
-export default function Footer() {
+export default async function Footer() {
+  "use cache";
+  cacheLife("days");
+
   return (
     <footer className="border-t py-2">
       <p className="text-sm tracking-tight text-foreground">
