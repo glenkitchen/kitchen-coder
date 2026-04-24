@@ -1,21 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(bun --version)",
-      "Bash(bun install *)",
-      "Bash(bunx @next/codemod@canary upgrade latest --verbose)",
-      "Skill(update-config)",
-      "Skill(update-config:*)",
-      "Bash(curl -sS -o /dev/null -w \"/ %{http_code} %{size_download}b\\\\n\" http://localhost:3001/)",
-      "Bash(curl -sS -o /dev/null -w \"/blog %{http_code} %{size_download}b\\\\n\" http://localhost:3001/blog)",
-      "Bash(curl -sS -o /dev/null -w \"/blog/hello-world %{http_code} %{size_download}b\\\\n\" http://localhost:3001/blog/hello-world)",
-      "Bash(curl -sS -o /dev/null -w \"/cv %{http_code} %{size_download}b\\\\n\" http://localhost:3001/cv)",
-      "Bash(curl -sS -o /dev/null -w \"/cv-pdf %{http_code} %{size_download}b\\\\n\" http://localhost:3001/cv-pdf)",
-      "Bash(curl -sS -o /dev/null -w \"home %{http_code}\\\\n\" http://localhost:3001/)",
-      "Bash(curl -sS -o /dev/null -w \"blog %{http_code}\\\\n\" http://localhost:3001/blog)",
-      "Bash(curl -sS -o /dev/null -w \"blog/hello-world %{http_code}\\\\n\" http://localhost:3001/blog/hello-world)",
-      "Bash(curl -sS -o /dev/null -w \"cv %{http_code}\\\\n\" http://localhost:3001/cv)",
-      "Bash(curl -sS -o /dev/null -w \"cv-pdf %{http_code}\\\\n\" http://localhost:3001/cv-pdf)"
+      "Bash(*)",
+      "Skill(*)"
     ]
   }
 }
