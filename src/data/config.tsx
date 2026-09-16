@@ -75,7 +75,7 @@ I am also open to contract work.
   work: [
     {
       company: "Kikstart",
-      href: "",
+      href: "https://kikstart.ai/",
       badges: ["Co-Founder"],
       location: "Durban, KZN, South Africa",
       title: "Co-founder",
@@ -86,7 +86,7 @@ I am also open to contract work.
     },
     {
       company: "Kodelab",
-      href: "https://insightconsulting.co.za/",
+      href: "",
       badges: ["Co-Founder"],
       location: "Durban, KZN, South Africa",
       title: "Co-founder (exited)",

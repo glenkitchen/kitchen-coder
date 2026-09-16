@@ -1,85 +1,59 @@
-"use client";
-
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion, Variants } from "framer-motion";
-import { useMemo } from "react";
+import type { CSSProperties } from "react";
 
 interface BlurFadeTextProps {
   text: string;
   className?: string;
-  variant?: {
-    hidden: { y: number };
-    visible: { y: number };
-  };
   duration?: number;
   characterDelay?: number;
   delay?: number;
   yOffset?: number;
   animateByCharacter?: boolean;
 }
+
+// CSS animation (see .blur-fade in globals.css) rather than framer-motion, so
+// text is never left hidden when JS animations don't run, e.g. after Back.
 const BlurFadeText = ({
   text,
   className,
-  variant,
+  duration = 0.3,
   characterDelay = 0.03,
   delay = 0,
   yOffset = 8,
   animateByCharacter = false,
 }: BlurFadeTextProps) => {
-  const defaultVariants: Variants = {
-    hidden: { y: yOffset, opacity: 0, filter: "blur(8px)" },
-    visible: { y: -yOffset, opacity: 1, filter: "blur(0px)" },
-  };
-  const combinedVariants = variant || defaultVariants;
-  const characters = useMemo(() => Array.from(text), [text]);
+  const style = (delaySeconds: number) =>
+    ({
+      "--blur-fade-duration": `${duration}s`,
+      "--blur-fade-delay": `${delaySeconds}s`,
+      "--blur-fade-y": `${yOffset}px`,
+      "--blur-fade-blur": "8px",
+    }) as CSSProperties;
 
   if (animateByCharacter) {
     return (
       <div className="flex">
-        <AnimatePresence>
-          {characters.map((char, i) => (
-            <motion.span
-              key={i}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              variants={combinedVariants}
-              transition={{
-                yoyo: Infinity,
-                delay: delay + i * characterDelay,
-                ease: "easeOut",
-              }}
-              // @ts-ignore
-              className={cn("inline-block", className)}
-              style={{ width: char.trim() === "" ? "0.2em" : "auto" }}
-            >
-              {char}
-            </motion.span>
-          ))}
-        </AnimatePresence>
+        {Array.from(text).map((char, i) => (
+          <span
+            key={i}
+            className={cn("blur-fade inline-block", className)}
+            style={{
+              ...style(delay + i * characterDelay),
+              width: char.trim() === "" ? "0.2em" : "auto",
+            }}
+          >
+            {char}
+          </span>
+        ))}
       </div>
     );
   }
 
   return (
     <div className="flex">
-      <AnimatePresence>
-        <motion.span
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          variants={combinedVariants}
-          transition={{
-            yoyo: Infinity,
-            delay,
-            ease: "easeOut",
-          }}
-          // @ts-ignore
-          className={cn("inline-block", className)}
-        >
-          {text}
-        </motion.span>
-      </AnimatePresence>
+      <span className={cn("blur-fade inline-block", className)} style={style(delay)}>
+        {text}
+      </span>
     </div>
   );
 };
