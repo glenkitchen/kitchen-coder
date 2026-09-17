@@ -18,15 +18,13 @@ export const siteConfig = {
   locationLink: "https://www.google.com/maps/place/Ballito",
   about: {
     title: "About",
-    text: `I am a software developer with extensive experience in enterprise business software.
-
-I bring a unique combination of specialized business process expertise and deep technical skills in the development of full-stack web applications and mobile applications.
+    text: `I am a software developer with extensive experience in enterprise business software, combining specialized business process expertise with deep technical skills in full-stack web and mobile applications.
 
 I have played a leading role in developing solutions for accounting, manufacturing, distribution, and retail.
 
-My core focus right now is [Kikstart](https://kikstart.ai/): business software for the AI era. Describe your business and AI provisions a live web app from maintained modules in minutes, with your own database from day one, ready to extend with custom features and a branded mobile app.
+I am open to contract and full-time work, on-site or remote, as a solution architect or a developer.
 
-I am also open to contract work.
+Alongside this I am actively working on and pursuing [Kikstart](https://kikstart.ai/): business software for the AI era.
 `,
   },
   navbar: [
