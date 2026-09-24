@@ -12,7 +12,7 @@ export const siteConfig = {
   avatarUrl: "/me.png",
   footer: "Software Developer.",
   initials: "GDK",
-  url: "https://kitchen-coder.vercel.app/",
+  url: "https://glenk.vercel.app/",
   location: "Ballito, KZN, South Africa",
   locationLink: "https://www.google.com/maps/place/Ballito",
   about: {

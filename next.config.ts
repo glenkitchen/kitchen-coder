@@ -4,6 +4,9 @@ import { NextConfig } from "next";
 const nextConfig: NextConfig = {
   pageExtensions: ["js", "jsx", "mdx", "ts", "tsx"],
   cacheComponents: true,
+  async redirects() {
+    return [{ source: "/cv", destination: "/", permanent: true }];
+  },
 };
 
 const withMDX = createMDX({
