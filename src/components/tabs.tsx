@@ -3,7 +3,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function AppTabs() {
   return (
-    <nav className="mb-8">
+    <nav className="mb-8 print:hidden">
       <Tabs defaultValue="/" className="w-full">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="/" asChild>

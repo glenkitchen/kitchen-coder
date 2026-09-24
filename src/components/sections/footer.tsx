@@ -9,7 +9,7 @@ export default async function Footer() {
   cacheLife("days");
 
   return (
-    <footer className="border-t py-2">
+    <footer className="border-t py-2 print:hidden">
       <p className="text-sm tracking-tight text-foreground">
         Copyright © {new Date().getFullYear()}{" "}
         <Link href="/" className="cursor-pointer">

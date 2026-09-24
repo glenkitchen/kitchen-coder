@@ -43,7 +43,7 @@ I build [Kikstart](https://kikstart.ai/) with AI agents day to day: I run Claude
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/kitcoder-linkedin",
+        url: "https://www.linkedin.com/in/glen-kitchen-12588962/",
         icon: Icons.linkedin,
 
         navbar: true,

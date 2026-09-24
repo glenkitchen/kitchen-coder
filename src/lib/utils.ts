@@ -54,13 +54,8 @@ export function calculateDuration(
     months += 12;
   }
 
-  const yearString = years > 0 ? `${years} year${years > 1 ? "s" : ""}` : "";
-  const monthString =
-    months > 0 ? `${months} month${months > 1 ? "s" : ""}` : "";
+  const yearString = years > 0 ? `${years}y` : "";
+  const monthString = months > 0 ? `${months}m` : "";
 
-  if (yearString && monthString) {
-    return `${yearString}, ${monthString}`;
-  } else {
-    return yearString || monthString;
-  }
+  return [yearString, monthString].filter(Boolean).join(" ");
 }

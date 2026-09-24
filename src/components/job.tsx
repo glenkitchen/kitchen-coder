@@ -28,7 +28,7 @@ export default function Job({
 }: JobProps) {
   return (
     <details open={open} className="group border-b py-4 last:border-b-0">
-      <summary className="flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
+      <summary className="break-after-avoid flex cursor-pointer list-none items-center justify-between gap-4 [&::-webkit-details-marker]:hidden">
         <div className="flex items-center gap-4">
           <ChevronRightIcon className="size-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-90 print:hidden" />
           {logoUrl && (

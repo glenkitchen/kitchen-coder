@@ -166,3 +166,15 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
     animation: none;
   }
 }
+
+@media print {
+  .blur-fade {
+    animation: none;
+  }
+
+  /* Print collapsed work sections expanded. */
+  details::details-content {
+    content-visibility: visible;
+    display: contents;
+  }
+}

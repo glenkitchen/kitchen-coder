@@ -3,7 +3,7 @@ import Job from "@/components/job";
 
 <section id="work">
 
-<h2 className="text-xl font-bold">Work Experience</h2>
+<h2 className="text-xl font-bold break-after-avoid">Work Experience</h2>
 
 <Job
   company="Kikstart"
@@ -14,9 +14,22 @@ import Job from "@/components/job";
   open
 >
 
-I am building business software for the AI era. AI provisions a solution from maintained modules in minutes, which can be run out of the box or extended with custom features and a branded mobile app.
+I am self-employed, building Kikstart: a multi-tenant SaaS platform for fast-tracked custom development. A customer's solution starts from maintained modules on the shared platform and is extended with custom features, instead of being built from scratch.
 
-I am working with interested parties in commerce and field solutions on modules and branded apps for the platform.
+I develop it AI-first, directing AI agents (Claude Code) to build and ship features. That is what makes the fast-tracked delivery possible.
+
+<div className="flex flex-wrap gap-2">
+  {[
+    "Typescript",
+    "Next.js",
+    "Expo",
+    "PostgreSQL",
+    "Neon",
+    "Claude Code",
+  ].map((tech) => (
+    <Badge key={tech}>{tech}</Badge>
+  ))}
+</div>
 
 </Job>
 
@@ -31,7 +44,7 @@ I am working with interested parties in commerce and field solutions on modules 
 
 I co-founded Kodelab, a custom software business spun out of Insight Consulting. I led the development team that built and extended a suite of web and mobile applications (distribution and retail) that became core to a division of one of South Africa's largest retailers, and owned the technical roadmap, infrastructure and delivery.
 
-I also led ad hoc enterprise projects for other Kodelab customers, taking each from scoping and architecture through development and delivery. On the customer side I identified opportunities that led to sales and maintained and strengthened the long-term customer relationship.
+I also led ad hoc enterprise projects for other Kodelab customers, taking each from scoping and architecture through development and delivery. I engaged with customers and maintained those relationships.
 
 <div className="flex flex-wrap gap-2">
   {[
@@ -41,7 +54,6 @@ I also led ad hoc enterprise projects for other Kodelab customers, taking each f
     "Next.js",
     "React Native",
     "Expo",
-    "AI SDK",
     "Azure",
     "C#",
     ".NET",
@@ -92,9 +104,11 @@ I was solution architect for a suite of web and mobile applications (distributio
   end="2019-10-31"
 >
 
-I was a full-stack senior developer, including on an in-house, low-code, analytics-based framework, and led ad hoc projects.
+I was a full-stack senior developer on an in-house no-code framework, and led ad hoc projects.
 
-The applications I worked on included online gambling utility programs (loyalty, auditing, promotions) and a high-volume banking system handling tens of thousands of daily transactions.
+The framework handled registrations and payments, processing tens of thousands of banking transactions a day.
+
+I also worked on online gambling utility programs (loyalty, auditing, promotions).
 
 <div className="flex flex-wrap gap-2">
   {[
@@ -105,7 +119,7 @@ The applications I worked on included online gambling utility programs (loyalty,
     "Azure",
     "ASP.Net",
     "C#",
-    ".NET Framework",
+    ".NET",
   ].map((tech) => (
     <Badge key={tech}>{tech}</Badge>
   ))}
@@ -139,6 +153,7 @@ I travelled extensively across South Africa and Africa for customer support and 
     "ASP.Net",
     "WPF",
     "C#",
+    ".NET",
   ].map((tech) => (
     <Badge key={tech}>{tech}</Badge>
   ))}
