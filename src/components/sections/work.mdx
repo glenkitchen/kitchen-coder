@@ -1,0 +1,177 @@
+import { Badge } from "@/components/ui/badge";
+import Job from "@/components/job";
+
+<section id="work">
+
+<h2 className="text-xl font-bold">Work Experience</h2>
+
+<Job
+  company="Kikstart"
+  logoUrl="/kikstart.png"
+  href="https://kikstart.ai/"
+  title="Founder, Software Developer"
+  period="Feb 2025 - Present"
+  open
+>
+
+I am building business software for the AI era. AI provisions a solution from maintained modules in minutes, which can be run out of the box or extended with custom features and a branded mobile app.
+
+I am working with interested parties in commerce and field solutions on modules and branded apps for the platform.
+
+</Job>
+
+<Job
+  company="Kodelab"
+  logoUrl="/kodelab.png"
+  title="Co-founder (exited), Solution Architect"
+  period="Mar 2021 - Jan 2025"
+  start="2021-03-01"
+  end="2025-01-31"
+>
+
+I co-founded Kodelab, a custom software business spun out of Insight Consulting. I led the development team that built and extended a suite of web and mobile applications (distribution and retail) that became core to a division of one of South Africa's largest retailers, and owned the technical roadmap, infrastructure and delivery.
+
+I also led ad hoc enterprise projects for other Kodelab customers, taking each from scoping and architecture through development and delivery. On the customer side I identified opportunities that led to sales and maintained and strengthened the long-term customer relationship.
+
+<div className="flex flex-wrap gap-2">
+  {[
+    "MySQL",
+    "Typescript",
+    "React",
+    "Next.js",
+    "React Native",
+    "Expo",
+    "AI SDK",
+    "Azure",
+    "C#",
+    ".NET",
+  ].map((tech) => (
+    <Badge key={tech}>{tech}</Badge>
+  ))}
+</div>
+
+</Job>
+
+<Job
+  company="Insight Consulting"
+  href="https://insightconsulting.co.za/"
+  logoUrl="/insight.jpg"
+  title="Solution Architect"
+  period="Nov 2019 - Feb 2021"
+  start="2019-11-01"
+  end="2021-02-28"
+>
+
+I was solution architect for a suite of web and mobile applications (distribution and retail) for a division of one of South Africa's largest retailers, designing the technical architecture and infrastructure.
+
+<div className="flex flex-wrap gap-2">
+  {[
+    "MySQL",
+    "Typescript",
+    "React",
+    "Next.js",
+    "React Native",
+    "Expo",
+    "Azure",
+    "C#",
+    ".NET",
+  ].map((tech) => (
+    <Badge key={tech}>{tech}</Badge>
+  ))}
+</div>
+
+</Job>
+
+<Job
+  company="Derivco"
+  href="https://derivco.co.za/"
+  logoUrl="/derivco.jpg"
+  title="Software Developer"
+  period="May 2015 - Oct 2019"
+  start="2015-05-01"
+  end="2019-10-31"
+>
+
+I was a full-stack senior developer, including on an in-house, low-code, analytics-based framework, and led ad hoc projects.
+
+The applications I worked on included online gambling utility programs (loyalty, auditing, promotions) and a high-volume banking system handling tens of thousands of daily transactions.
+
+<div className="flex flex-wrap gap-2">
+  {[
+    "SQL Server",
+    "Typescript",
+    "JavaScript",
+    "Angular.js",
+    "Azure",
+    "ASP.Net",
+    "C#",
+    ".NET Framework",
+  ].map((tech) => (
+    <Badge key={tech}>{tech}</Badge>
+  ))}
+</div>
+
+</Job>
+
+<Job
+  company="AdaptIT"
+  href="https://www.adaptit.com/"
+  logoUrl="/adaptit.jpg"
+  title="Software Developer / Team Lead"
+  period="Oct 2006 - Apr 2015"
+  start="2006-10-01"
+  end="2015-04-30"
+>
+
+I was a full-stack developer and development team lead, working on accounting, sales and distribution, and warehousing applications, and led the team behind the SHEQ (Safety, Health, Environment, Quality) product suite.
+
+I travelled extensively across South Africa and Africa for customer support and product rollout, and engaged senior business executives on sales and technical initiatives.
+
+<div className="flex flex-wrap gap-2">
+  {[
+    "Oracle Certified (Expired)",
+    "Oracle Database",
+    "PL/SQL",
+    "Oracle Forms",
+    "Java",
+    "Microsoft Certified (Expired)",
+    "SQL Server",
+    "ASP.Net",
+    "WPF",
+    "C#",
+  ].map((tech) => (
+    <Badge key={tech}>{tech}</Badge>
+  ))}
+</div>
+
+</Job>
+
+<Job
+  company="Van Dyck Carpets"
+  href="https://www.vandyck.co.za/"
+  logoUrl="/vandyck.jpeg"
+  title="Accountant / Developer"
+  period="Apr 1999 - Sep 2006"
+  start="1999-04-01"
+  end="2006-09-30"
+>
+
+This was a hybrid role with accounting and IT duties. On the accounting side I was initially the cost accountant and thereafter the management accountant responsible for overseeing the accounts department.
+
+The IT projects were my introduction to software development: I managed the rollout of the Syspro ERP, oversaw development of in-house shop floor applications, and developed in-house sales reporting applications.
+
+</Job>
+
+<Job
+  company="Windmill Restaurant"
+  title="Restaurant Manager"
+  period="Jun 1992 - Mar 1999"
+  start="1992-06-01"
+  end="1999-03-31"
+>
+
+I worked as a restaurant manager while pursuing a sporting career as a Springbok bodyboarder and doing freelance accounting work.
+
+</Job>
+
+</section>

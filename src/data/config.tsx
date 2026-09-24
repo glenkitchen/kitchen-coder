@@ -2,7 +2,6 @@ import { Icons } from "@/components/icons";
 import {
   FileIcon,
   GitPullRequestDraftIcon,
-  HomeIcon,
   NotebookIcon,
 } from "lucide-react";
 
@@ -22,15 +21,14 @@ export const siteConfig = {
 
 I have played a leading role in developing solutions for accounting, manufacturing, distribution, and retail.
 
-I am open to contract and full-time work, on-site or remote, as a solution architect or a developer.
+I am open to contract and full-time work as a full-stack software developer: remote, hybrid, or on-site for periods. I hold a British passport, so I am available in both South Africa and the UK.
 
-Alongside this I am actively working on and pursuing [Kikstart](https://kikstart.ai/): business software for the AI era.
+I build [Kikstart](https://kikstart.ai/) with AI agents day to day: I run Claude Code in loops and scheduled routines, and write custom skills that capture my own development workflows.
 `,
   },
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/cv", icon: NotebookIcon, label: "CV" },
-    { href: "/cv-pdf", icon: FileIcon, label: "CV - PDF" },
+    { href: "/", icon: NotebookIcon, label: "CV" },
+    { href: "/cv-pdf", icon: FileIcon, label: "PDF" },
   ],
   contact: {
     email: "hello@example.com",
@@ -70,85 +68,6 @@ Alongside this I am actively working on and pursuing [Kikstart](https://kikstart
       },
     },
   },
-  work: [
-    {
-      company: "Kikstart",
-      href: "https://kikstart.ai/",
-      badges: ["Co-Founder"],
-      location: "Durban, KZN, South Africa",
-      title: "Co-founder",
-      logoUrl: "",
-      start: "Feb 2025",
-      end: "Present",
-      description: "",
-    },
-    {
-      company: "Kodelab",
-      href: "",
-      badges: ["Co-Founder"],
-      location: "Durban, KZN, South Africa",
-      title: "Co-founder (exited)",
-      logoUrl: "/kodelab.png",
-      start: "Mar 2021 ",
-      end: "Jan 2025",
-      description: "",
-    },
-    {
-      company: "Insight Consulting",
-      href: "https://insightconsulting.co.za/",
-      badges: [],
-      location: "Durban, KZN, South Africa",
-      title: "Solution Architect",
-      logoUrl: "/insight.jpg",
-      start: "Nov 2019 ",
-      end: "Feb 2021",
-      description: "",
-    },
-    {
-      company: "Derivco ",
-      href: "https://derivco.co.za/",
-      badges: [],
-      location: "Durban, KZN, South Africa",
-      title: "Senior Developer",
-      logoUrl: "/derivco.jpg",
-      start: "May 2015",
-      end: "Oct 2019",
-      description: "",
-    },
-    {
-      company: "AdaptIT",
-      href: "https://www.adaptit.com/",
-      badges: [],
-      location: "Durban, KZN, South Africa",
-      title: "Development Team Lead",
-      logoUrl: "/adaptit.jpg",
-      start: "Oct 2006",
-      end: "Apr 2015",
-      description: "",
-    },
-    {
-      company: "Van Dyck Carpets",
-      href: "https://www.vandyck.co.za/",
-      badges: [],
-      location: "Durban, KZN, South Africa",
-      title: "Accountant/Developer",
-      logoUrl: "/vandyck.jpeg",
-      start: "Apr 1999",
-      end: "Sep 2006",
-      description: "",
-    },
-    {
-      company: "Windmill Restaurant",
-      href: "",
-      badges: [],
-      location: "Durban, KZN, South Africa",
-      title: "Restaurant Manager",
-      logoUrl: "",
-      start: "Jun 1992",
-      end: "Mar 1999",
-      description: "",
-    },
-  ],
   education: [
     {
       school: "University of Cape Town",
@@ -174,7 +93,10 @@ Alongside this I am actively working on and pursuing [Kikstart](https://kikstart
     "React Native",
     "Expo",
     "PostgreSQL",
-    "Agentic Coding",
+    "Neon",
+    "Multi-tenant SaaS",
+    "Claude Code",
+    "AI Agent Loops",
   ],
   projects: [
     {
